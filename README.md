@@ -186,6 +186,43 @@ I believe in choosing tools intentionally based on architectural requirements an
 
 ---
 
+## 📊 GitHub Statistics & Telemetry
+
+Activity metrics and consistency tracking across active engineering projects:
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center" width="50%">
+        <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=GajjelaVasudev&show_icons=true&theme=radical&bg_color=190B46&title_color=762FF2&text_color=E8E6F0&icon_color=762FF2&border_color=4C2ACB" alt="Vasudev Gajjela GitHub Stats" width="100%" />
+      </td>
+      <td align="center" width="50%">
+        <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=GajjelaVasudev&layout=compact&bg_color=190B46&title_color=762FF2&text_color=E8E6F0&border_color=4C2ACB&langs_count=6" alt="Most Used Languages" width="100%" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2">
+        <br/>
+        <img src="https://streak-stats.demolab.com?user=GajjelaVasudev&theme=midnight-violet&background=190B46&border=762FF2&stroke=762FF2&ring=762FF2&fire=762FF2&currStreakNum=F7F7FB&sideNums=E8E6F0&currStreakLabel=F7F7FB&sideLabels=E8E6F0&dates=D1C4E9" alt="Contribution Streak" width="100%" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## 📈 3D Contribution Landscape
+
+An isometric perspective of commit intensity, code reviews, and project velocity across repositories:
+
+<div align="center">
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile Contribution Visualization" width="100%" style="border-radius: 12px; border: 1px solid #4C2ACB;" />
+  <br/>
+  <sub><i>Isometric visualization updated daily at 18:00 UTC via scheduled GitHub Actions (<code>.github/workflows/profile-3d.yml</code>).</i></sub>
+</div>
+
+---
+
 ## 🏆 Verified Achievements & Credentials
 
 > Every highlight below is backed by primary verifiable evidence, institutional records, and credentials.
@@ -228,31 +265,44 @@ I believe in choosing tools intentionally based on architectural requirements an
 Algorithmic practice and data structure fundamentals across recognized competitive platforms:
 
 <div align="center">
-  <table>
+  <table border="0">
     <tr>
-      <td align="center" width="25%">
+      <td width="55%" align="center" valign="middle">
         <a href="https://leetcode.com/u/Vasudev_gajjela/">
-          <img src="https://img.shields.io/badge/LeetCode-Vasudev__gajjela-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /><br/>
-          <sub><b>Algorithmic Problem Solving</b></sub>
+          <img src="https://leetcard.jacoblin.cool/Vasudev_gajjela?theme=dark&font=Plus%20Jakarta%20Sans&ext=activity" alt="Vasudev Gajjela LeetCode Statistics" width="100%" />
         </a>
       </td>
-      <td align="center" width="25%">
-        <a href="https://www.codechef.com/users/vkl2400031804">
-          <img src="https://img.shields.io/badge/CodeChef-vkl2400031804-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef" /><br/>
-          <sub><b>Competitive Contests</b></sub>
-        </a>
-      </td>
-      <td align="center" width="25%">
-        <a href="https://codeforces.com/profile/Gajjela_Vasudev">
-          <img src="https://img.shields.io/badge/Codeforces-Gajjela__Vasudev-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces" /><br/>
-          <sub><b>Contest Rounds &amp; Speed</b></sub>
-        </a>
-      </td>
-      <td align="center" width="25%">
-        <a href="https://www.hackerrank.com/profile/h2400031804">
-          <img src="https://img.shields.io/badge/HackerRank-h2400031804-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black" alt="HackerRank" /><br/>
-          <sub><b>Core Languages &amp; SQL</b></sub>
-        </a>
+      <td width="45%" align="center" valign="middle">
+        <table border="0" width="100%">
+          <tr>
+            <td align="center">
+              <a href="https://leetcode.com/u/Vasudev_gajjela/">
+                <img src="https://img.shields.io/badge/LeetCode-Vasudev__gajjela-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <a href="https://www.codechef.com/users/vkl2400031804">
+                <img src="https://img.shields.io/badge/CodeChef-vkl2400031804-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <a href="https://codeforces.com/profile/Gajjela_Vasudev">
+                <img src="https://img.shields.io/badge/Codeforces-Gajjela__Vasudev-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <a href="https://www.hackerrank.com/profile/h2400031804">
+                <img src="https://img.shields.io/badge/HackerRank-h2400031804-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black" alt="HackerRank" />
+              </a>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
   </table>

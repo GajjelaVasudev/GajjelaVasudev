@@ -27,7 +27,7 @@
   <h3>Software Engineer &bull; Distributed Backend Systems &bull; Applied AI</h3>
 
   <p align="center">
-    <i>Building resilient, high-concurrency backend services, robust full-stack platforms, and purposeful AI-powered systems.</i>
+    <i>Building resilient backend services, practical full-stack platforms, and purposeful AI-driven automation.</i>
   </p>
 
 </div>
@@ -36,27 +36,27 @@
 
 ## ⚡ About Me
 
-I am a **Computer Science and Engineering student** focused on backend systems architecture, high-concurrency web platforms, and practical artificial intelligence. 
+I am a **software engineer and Computer Science student** focused on backend systems architecture, high-concurrency web platforms, and practical artificial intelligence.
 
-My engineering approach prioritizes **clarity, resilience, and real-world utility** over superficial complexity:
-- 🏛 **Systems & Backend Engineering:** Deeply interested in how scalable software is designed, isolated, and sustained under load — from multi-document ACID transactions in MongoDB and distributed Redis caching to idempotent payment workflows and resilient API design.
-- 🤖 **Applied AI & Quality Automation:** Exploring Generative AI, Retrieval-Augmented Generation (RAG), and intelligent testing pipelines (converting natural language into executable browser automation using Gemini and Playwright).
-- 🧩 **First-Principles Thinking:** Dedicated to understanding runtime trade-offs, concurrency hazards, and failure modes rather than simply assembling frameworks.
+My engineering approach prioritizes **clarity, resilience, and real-world utility**:
+- 🏛 **Systems & Backend Engineering:** Focused on how software operates under real-world concurrency — implementing multi-document ACID transactions in MongoDB, distributed Redis caching, idempotent payment workflows, and structured REST APIs.
+- 🤖 **Applied AI & Automation:** Designing practical AI applications and testing systems, including natural language browser automation using Google Gemini and Playwright, and vector-backed retrieval systems with Pinecone.
+- 🧩 **First-Principles Problem Solving:** Emphasizing concurrency safety, explicit data validation, predictable failure modes, and clear system boundaries rather than framework hype.
 
 ---
 
 ## 🎯 Current Focus
 
 - 🚀 **Flagship Engineering:** Hardening **OMIZON**, a full-stack multi-category marketplace featuring multi-document ACID inventory reservations, distributed rate limiting, and webhook idempotency.
-- ⚡ **Algorithmic Problem Solving:** Consistent practice across LeetCode, CodeChef, and Codeforces targeting advanced data structures, graph traversals, and dynamic programming.
-- 🧠 **Context-Grounded AI:** Experimenting with vector embeddings (Pinecone) and LLM orchestration for deterministic, hallucination-resistant domain assistants.
-- 📦 **DevOps & Infrastructure:** Structuring containerized microservices with Docker Compose, automated CI/CD validation pipelines, and comprehensive integration testing.
+- ⚡ **Algorithmic Practice:** Daily problem solving across LeetCode, CodeChef, and Codeforces focusing on data structures, graph algorithms, and dynamic programming.
+- 🧠 **Context-Augmented AI:** Building vector-indexed retrieval pipelines (Pinecone) with LLM orchestration for structured, domain-grounded query answering.
+- 📦 **DevOps & Testing:** Structuring containerized services with Docker Compose, automated CI verification pipelines, and integration test suites.
 
 ---
 
 ## 🛠 Technology Stack
 
-I believe in choosing tools intentionally based on architectural requirements and operational guarantees.
+A curated toolkit chosen for architectural resilience and practical delivery:
 
 <details open>
 <summary><b>View Grouped Capabilities</b></summary>
@@ -77,8 +77,8 @@ I believe in choosing tools intentionally based on architectural requirements an
 
 ## 🌟 Featured Engineering Projects
 
-### 🚀 Flagship Project: OMIZON — Scalable Multi-Category Marketplace
-> A high-performance, fault-tolerant e-commerce marketplace backend and design ecosystem engineered to resolve race conditions, overselling, and payment reconciliation at scale.
+### 🚀 Tier 1 (Flagship): OMIZON — Scalable Multi-Category Marketplace
+> A high-concurrency marketplace backend and design ecosystem engineered to prevent race conditions, overselling, and payment inconsistencies under load.
 
 <p align="center">
   <img src="./assets/omizon-preview.png" alt="OMIZON Marketplace Interface Preview" width="100%" style="border-radius: 12px; border: 1px solid #762FF2;" />
@@ -99,41 +99,40 @@ I believe in choosing tools intentionally based on architectural requirements an
 └──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-- **Architectural Highlights & Hardening:**
-  - **Atomic Concurrency Control:** Implemented multi-document MongoDB transactions with optimistic locks and inventory reservation TTL countdowns to eliminate double-allocation during flash traffic spikes.
-  - **Financial-Grade Payment Engine:** Integrated Razorpay with raw-body HMAC SHA-256 signature verification, persistent webhook deduplication keys, and automated compensation routines.
-  - **Zero-Trust Access Control:** Strict RBAC (`buyer`, `seller`, `admin`) with schema-level prevention against privilege escalation during public registration.
-  - **Distributed Cache & Resilience:** Redis layer for product reads and tiered rate limiting with graceful fallback to in-memory handling during Redis downtime.
-  - **Comprehensive UI/UX System:** 35+ production-grade interface designs (Storefront, PDP, Cart Drawer, Multi-Step Checkout, Seller Portal, Admin Warehouse Control) built on Space Grotesk and Inter typography.
+- **Implementation Status:**
+  - **Completed (Backend):** Multi-document MongoDB ACID transactions with replica-set sessions; atomic inventory reservation with TTL expiration; server-side price recalculation (preventing client-side cart tampering); Razorpay raw-body HMAC SHA-256 webhook signature verification with idempotent event deduplication; Redis distributed rate limiter with in-memory fallback; health/readiness endpoints; integration test suite.
+  - **Completed (UI/UX System):** 35+ screen specifications in Stitch (Storefront, PDP, Cart Drawer, Checkout, Account Hub, Seller Hub, Platform Admin, Warehouse Inventory) built on Space Grotesk and Inter typography.
+  - **In Progress:** Integrating the React + Vite storefront client with the hardened Express API endpoints.
+  - **Planned:** Automated seller payout reconciliation and catalog analytics.
 - **Tech Stack:** `Node.js` &bull; `Express 5` &bull; `MongoDB (Replica Sets)` &bull; `Redis` &bull; `Razorpay` &bull; `Docker Compose` &bull; `React + Vite`
 - **Explore:** [Repository Overview & Code &rarr;](https://github.com/GajjelaVasudev/scalable-ecommerce-platform) &bull; [Architecture Specifications &rarr;](https://github.com/GajjelaVasudev/scalable-ecommerce-platform#architecture--technology-stack)
 
 ---
 
-### 🏆 Core Featured Showcases
+### 🏆 Tier 2: Core Featured Engineering Systems
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h3>🤖 Natural Language Test Automation</h3>
-      <p><b>AI-Powered Natural-Language Browser Automation Engine</b></p>
-      <p>An autonomous testing tool that translates plain-English test descriptions into structured executable automation steps via <b>Google Gemini</b> and executes them in real headless browser environments with <b>Playwright</b>.</p>
+      <p><b>AI-Powered Browser Automation Engine</b></p>
+      <p>A testing tool that translates plain-English test descriptions into structured executable automation steps via <b>Google Gemini</b> and executes them in real headless browser environments using <b>Playwright</b>.</p>
       <ul>
-        <li>Deterministic intent-to-action parsing with JSON schema enforcement.</li>
-        <li>Eliminates flaky CSS/XPath selector fragility through contextual prompts.</li>
-        <li>Automated step reporting, visual trace logs, and pass/fail assertions.</li>
+        <li>Deterministic intent-to-action parsing using JSON schema enforcement.</li>
+        <li>Bypasses brittle CSS/XPath selectors by evaluating semantic intent.</li>
+        <li>Generates step-by-step execution logs, trace data, and pass/fail assertions.</li>
       </ul>
       <p><b>Tech Stack:</b> <code>JavaScript</code> &bull; <code>Google Gemini API</code> &bull; <code>Playwright</code> &bull; <code>Node.js</code></p>
       <a href="https://github.com/GajjelaVasudev/Natural-Language-Test-Automation"><b>Explore Repository &rarr;</b></a>
     </td>
     <td width="50%" valign="top">
       <h3>📚 NxtGen LMS</h3>
-      <p><b>Role-Based Modern Learning Management System</b></p>
-      <p>A multi-tier platform built to streamline academic administration, course delivery, and learning telemetry across diverse stakeholder roles with responsive client interfaces.</p>
+      <p><b>Role-Based Modern Learning Management Platform</b></p>
+      <p>A multi-tier platform built to manage course delivery, learning resources, and academic telemetry across multiple stakeholder roles with responsive client interfaces.</p>
       <ul>
-        <li>Dedicated workflows for Admins, Instructors, Course Creators, and Students.</li>
-        <li>Dynamic assessment scoring and longitudinal learning progress tracking.</li>
-        <li>Full-stack PostgreSQL persistence via Supabase with role-level isolation.</li>
+        <li>Dedicated workflows and access policies for Admins, Instructors, and Students.</li>
+        <li>Relational database schema with 6 SQL migration scripts and audit tables.</li>
+        <li>Dynamic assignment submissions and longitudinal learning progress tracking.</li>
       </ul>
       <p><b>Tech Stack:</b> <code>React</code> &bull; <code>TypeScript</code> &bull; <code>Tailwind CSS</code> &bull; <code>Supabase</code> &bull; <code>Express</code></p>
       <a href="https://nxt-gen-lms.vercel.app"><b>🚀 Live Demo</b></a> &bull; <a href="https://github.com/GajjelaVasudev/NxtGen-LMS"><b>Explore Repository &rarr;</b></a>
@@ -143,11 +142,11 @@ I believe in choosing tools intentionally based on architectural requirements an
     <td colspan="2" valign="top">
       <h3>🎯 Adaptive Selenium Form Automation</h3>
       <p><b>Context-Aware Resilient Test Suite in C# &bull; .NET 10</b></p>
-      <p>A resilient enterprise automation application that navigates dynamic web forms using multi-attribute contextual heuristics rather than brittle, hardcoded DOM selectors.</p>
+      <p>An automated form interaction application that navigates dynamic web controls using multi-attribute contextual heuristics rather than brittle, hardcoded DOM selectors.</p>
       <ul>
-        <li>Identifies form targets through surrounding context, labels, and attribute clusters.</li>
-        <li>Resilient to UI redesigns, variable attribute names, and asynchronous DOM re-renders.</li>
-        <li>Modular design adhering to SOLID principles and clean separation of concerns.</li>
+        <li>Discovers targets by scoring surrounding labels, relative context, and attribute sets.</li>
+        <li>Maintains test stability across UI updates, dynamic attribute names, and re-renders.</li>
+        <li>Structured console test suite utilizing clean separation of concerns and SOLID design.</li>
       </ul>
       <p><b>Tech Stack:</b> <code>C#</code> &bull; <code>.NET 10</code> &bull; <code>Selenium WebDriver 4.52</code> &bull; <code>Google Chrome</code></p>
       <a href="https://github.com/GajjelaVasudev/Adaptive-Selenium-Automation"><b>Explore Repository &rarr;</b></a>
@@ -157,28 +156,28 @@ I believe in choosing tools intentionally based on architectural requirements an
 
 ---
 
-### 🧩 Additional Systems & Applied Engineering
+### 🧩 Tier 3: Compact Secondary Engineering Showcases
 
 <div align="center">
   <table>
     <tr>
       <td width="33%" valign="top">
+        <h4>🧠 Applied RAG Vector Engine</h4>
+        <p>A document retrieval pipeline combining Google GenAI embeddings with a Pinecone vector index and Express 5 API for context-augmented search.</p>
+        <p><sub><b>JavaScript &bull; Pinecone &bull; Google GenAI &bull; Express 5</b></sub></p>
+        <a href="https://github.com/GajjelaVasudev/rag-project"><b>View Project &rarr;</b></a>
+      </td>
+      <td width="33%" valign="top">
         <h4>🎫 Webinar Management System</h4>
-        <p>Full-stack event registration and workshop platform built with Django. Role-based organizer and attendee portals, session recording distribution, and attendance tracking.</p>
+        <p>Full-stack event platform in Django featuring role-based attendee registration, schedule management, and session recording distribution.</p>
         <p><sub><b>Python 3 &bull; Django &bull; PostgreSQL/SQLite &bull; TypeScript</b></sub></p>
         <a href="https://github.com/GajjelaVasudev/Webinar-Management-System"><b>View Project &rarr;</b></a>
       </td>
       <td width="33%" valign="top">
         <h4>🏛 Student Dashboard Backend</h4>
-        <p>Layered Spring Boot microservice implementing controller-service-repository patterns, clean DTO contracts, Spring Data JPA, global exception handlers, and Docker packaging.</p>
+        <p>Layered Spring Boot microservice implementing controller-service-repository patterns, DTO validation boundaries, and Docker containerization.</p>
         <p><sub><b>Java &bull; Spring Boot &bull; Spring Data JPA &bull; Docker</b></sub></p>
         <a href="https://github.com/GajjelaVasudev/edu-library-backend"><b>View Project &rarr;</b></a>
-      </td>
-      <td width="33%" valign="top">
-        <h4>🧠 Applied RAG Vector Engine</h4>
-        <p>Contextual semantic retrieval engine integrating Pinecone vector indexing with LLM orchestration for deterministic, hallucination-resistant query answering over private knowledge bases.</p>
-        <p><sub><b>JavaScript &bull; Pinecone &bull; Google GenAI &bull; Express 5</b></sub></p>
-        <a href="https://github.com/GajjelaVasudev/rag-project"><b>View Project &rarr;</b></a>
       </td>
     </tr>
   </table>
@@ -232,7 +231,7 @@ An isometric perspective of commit intensity, code reviews, and project velocity
     <td width="50%" valign="top">
       <h4>🥈 JPMorgan Chase Code for Good 2026 — Runner-Up</h4>
       <p><b>Track:</b> Problem Statement 2 (Dharmalife) &bull; <b>Team:</b> Team 28<br/>
-      Built <b>DLONE (DLE Sarthi)</b>, an explainable digital assistance platform tailored to rural women entrepreneurs (Direct-to-Consumer Livelihood Entrepreneurs). Engineered hyperlocal recommendation explanations, grounded AI pitch generation, and multilingual interface with row-level database security.</p>
+      Built <b>DLONE (DLE Sarthi)</b>, an explainable digital assistance platform tailored to rural women micro-entrepreneurs. Engineered hyperlocal recommendation explanations, grounded sales pitch assistance, and multilingual interface with row-level database security.</p>
       <a href="https://lnkd.in/p/dBNVE34r"><b>View Verified LinkedIn Post &rarr;</b></a>
     </td>
     <td width="50%" valign="top">

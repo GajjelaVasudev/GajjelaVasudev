@@ -75,6 +75,117 @@ I believe in choosing tools intentionally based on architectural requirements an
 
 ---
 
+## 🌟 Featured Engineering Projects
+
+### 🚀 Flagship Project: OMIZON — Scalable Multi-Category Marketplace
+> A high-performance, fault-tolerant e-commerce marketplace backend and design ecosystem engineered to resolve race conditions, overselling, and payment reconciliation at scale.
+
+<p align="center">
+  <img src="./assets/omizon-preview.png" alt="OMIZON Marketplace Interface Preview" width="100%" style="border-radius: 12px; border: 1px solid #762FF2;" />
+</p>
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│                                OMIZON SYSTEM ARCHITECTURE                                │
+│                                                                                          │
+│  [ React 19 + Vite Client ] ──► [ Express 5 Gateway / Redis Rate Limiter ]              │
+│                                              │                                           │
+│                       ┌──────────────────────┴──────────────────────┐                    │
+│                       ▼                                             ▼                    │
+│        [ Multi-Document ACID Tx ]                       [ Idempotent Webhook Engine ]     │
+│        • MongoDB Replica Set                            • Razorpay HMAC-SHA256           │
+│        • Atomic Stock Decrement                         • Replay Attack Defense          │
+│        • Reservation TTL Expiry                         • Auto-Refund on Failure         │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+- **Architectural Highlights & Hardening:**
+  - **Atomic Concurrency Control:** Implemented multi-document MongoDB transactions with optimistic locks and inventory reservation TTL countdowns to eliminate double-allocation during flash traffic spikes.
+  - **Financial-Grade Payment Engine:** Integrated Razorpay with raw-body HMAC SHA-256 signature verification, persistent webhook deduplication keys, and automated compensation routines.
+  - **Zero-Trust Access Control:** Strict RBAC (`buyer`, `seller`, `admin`) with schema-level prevention against privilege escalation during public registration.
+  - **Distributed Cache & Resilience:** Redis layer for product reads and tiered rate limiting with graceful fallback to in-memory handling during Redis downtime.
+  - **Comprehensive UI/UX System:** 35+ production-grade interface designs (Storefront, PDP, Cart Drawer, Multi-Step Checkout, Seller Portal, Admin Warehouse Control) built on Space Grotesk and Inter typography.
+- **Tech Stack:** `Node.js` &bull; `Express 5` &bull; `MongoDB (Replica Sets)` &bull; `Redis` &bull; `Razorpay` &bull; `Docker Compose` &bull; `React + Vite`
+- **Explore:** [Repository Overview & Code &rarr;](https://github.com/GajjelaVasudev/scalable-ecommerce-platform) &bull; [Architecture Specifications &rarr;](https://github.com/GajjelaVasudev/scalable-ecommerce-platform#architecture--technology-stack)
+
+---
+
+### 🏆 Core Featured Showcases
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🤖 Natural Language Test Automation</h3>
+      <p><b>AI-Powered Natural-Language Browser Automation Engine</b></p>
+      <p>An autonomous testing tool that translates plain-English test descriptions into structured executable automation steps via <b>Google Gemini</b> and executes them in real headless browser environments with <b>Playwright</b>.</p>
+      <ul>
+        <li>Deterministic intent-to-action parsing with JSON schema enforcement.</li>
+        <li>Eliminates flaky CSS/XPath selector fragility through contextual prompts.</li>
+        <li>Automated step reporting, visual trace logs, and pass/fail assertions.</li>
+      </ul>
+      <p><b>Tech Stack:</b> <code>JavaScript</code> &bull; <code>Google Gemini API</code> &bull; <code>Playwright</code> &bull; <code>Node.js</code></p>
+      <a href="https://github.com/GajjelaVasudev/Natural-Language-Test-Automation"><b>Explore Repository &rarr;</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📚 NxtGen LMS</h3>
+      <p><b>Role-Based Modern Learning Management System</b></p>
+      <p>A multi-tier platform built to streamline academic administration, course delivery, and learning telemetry across diverse stakeholder roles with responsive client interfaces.</p>
+      <ul>
+        <li>Dedicated workflows for Admins, Instructors, Course Creators, and Students.</li>
+        <li>Dynamic assessment scoring and longitudinal learning progress tracking.</li>
+        <li>Full-stack PostgreSQL persistence via Supabase with role-level isolation.</li>
+      </ul>
+      <p><b>Tech Stack:</b> <code>React</code> &bull; <code>TypeScript</code> &bull; <code>Tailwind CSS</code> &bull; <code>Supabase</code> &bull; <code>Express</code></p>
+      <a href="https://nxt-gen-lms.vercel.app"><b>🚀 Live Demo</b></a> &bull; <a href="https://github.com/GajjelaVasudev/NxtGen-LMS"><b>Explore Repository &rarr;</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>🎯 Adaptive Selenium Form Automation</h3>
+      <p><b>Context-Aware Resilient Test Suite in C# &bull; .NET 10</b></p>
+      <p>A resilient enterprise automation application that navigates dynamic web forms using multi-attribute contextual heuristics rather than brittle, hardcoded DOM selectors.</p>
+      <ul>
+        <li>Identifies form targets through surrounding context, labels, and attribute clusters.</li>
+        <li>Resilient to UI redesigns, variable attribute names, and asynchronous DOM re-renders.</li>
+        <li>Modular design adhering to SOLID principles and clean separation of concerns.</li>
+      </ul>
+      <p><b>Tech Stack:</b> <code>C#</code> &bull; <code>.NET 10</code> &bull; <code>Selenium WebDriver 4.52</code> &bull; <code>Google Chrome</code></p>
+      <a href="https://github.com/GajjelaVasudev/Adaptive-Selenium-Automation"><b>Explore Repository &rarr;</b></a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🧩 Additional Systems & Applied Engineering
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="33%" valign="top">
+        <h4>🎫 Webinar Management System</h4>
+        <p>Full-stack event registration and workshop platform built with Django. Role-based organizer and attendee portals, session recording distribution, and attendance tracking.</p>
+        <p><sub><b>Python 3 &bull; Django &bull; PostgreSQL/SQLite &bull; TypeScript</b></sub></p>
+        <a href="https://github.com/GajjelaVasudev/Webinar-Management-System"><b>View Project &rarr;</b></a>
+      </td>
+      <td width="33%" valign="top">
+        <h4>🏛 Student Dashboard Backend</h4>
+        <p>Layered Spring Boot microservice implementing controller-service-repository patterns, clean DTO contracts, Spring Data JPA, global exception handlers, and Docker packaging.</p>
+        <p><sub><b>Java &bull; Spring Boot &bull; Spring Data JPA &bull; Docker</b></sub></p>
+        <a href="https://github.com/GajjelaVasudev/edu-library-backend"><b>View Project &rarr;</b></a>
+      </td>
+      <td width="33%" valign="top">
+        <h4>🧠 Applied RAG Vector Engine</h4>
+        <p>Contextual semantic retrieval engine integrating Pinecone vector indexing with LLM orchestration for deterministic, hallucination-resistant query answering over private knowledge bases.</p>
+        <p><sub><b>JavaScript &bull; Pinecone &bull; Google GenAI &bull; Express 5</b></sub></p>
+        <a href="https://github.com/GajjelaVasudev/rag-project"><b>View Project &rarr;</b></a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## 🏆 Verified Achievements & Credentials
 
 > Every highlight below is backed by primary verifiable evidence, institutional records, and credentials.

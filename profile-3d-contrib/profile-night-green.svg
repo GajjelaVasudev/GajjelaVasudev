@@ -120,7 +120,7 @@
   <!-- Bottom Metric Summary Bar -->
   <g transform="translate(36, 375)">
     <rect width="778" height="30" rx="8" fill="#140B33" stroke="#4C2ACB" stroke-width="1" stroke-opacity="0.6" />
-    <text x="24" y="19.5" fill="#34D399" font-family="monospace" font-size="11.5" font-weight="700">● 750+ Total Contributions</text>
+    <text x="24" y="19.5" fill="#34D399" font-family="monospace" font-size="11.5" font-weight="700">● 460+ Total Contributions</text>
     <text x="280" y="19.5" fill="#DDD6FE" font-family="monospace" font-size="11.5">&bull; Active Production Repositories</text>
     <text x="560" y="19.5" fill="#9D62FF" font-family="monospace" font-size="11.5">&bull; Daily CI Telemetry Engine</text>
   </g>

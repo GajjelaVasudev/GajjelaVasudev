@@ -95,12 +95,12 @@ A curated toolkit chosen for architectural resilience and practical delivery:
 │        [ Multi-Document ACID Tx ]                       [ Idempotent Webhook Engine ]     │
 │        • MongoDB Replica Set                            • Razorpay HMAC-SHA256           │
 │        • Atomic Stock Decrement                         • Replay Attack Defense          │
-│        • Reservation TTL Expiry                         • Auto-Refund on Failure         │
+│        • Reservation TTL Expiry                         • Reconciliation Queue           │
 └──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 - **Implementation Status:**
-  - **Completed (Backend):** Multi-document MongoDB ACID transactions with replica-set sessions; atomic inventory reservation with TTL expiration; server-side price recalculation (preventing client-side cart tampering); Razorpay raw-body HMAC SHA-256 webhook signature verification with idempotent event deduplication; Redis distributed rate limiter with in-memory fallback; health/readiness endpoints; integration test suite.
+  - **Completed (Backend):** Multi-document MongoDB ACID transactions with replica-set sessions; atomic inventory reservation with TTL expiration; server-side price recalculation (preventing client-side cart tampering); Razorpay Payment Processing with raw-body HMAC SHA-256 signature verification, persistent webhook deduplication keys, and a dedicated reconciliation queue for duplicate charges and failure resolution; Redis distributed rate limiter with in-memory fallback; health/readiness endpoints; integration test suite.
   - **Completed (UI/UX System):** 35+ screen specifications in Stitch (Storefront, PDP, Cart Drawer, Checkout, Account Hub, Seller Hub, Platform Admin, Warehouse Inventory) built on Space Grotesk and Inter typography.
   - **In Progress:** Integrating the React + Vite storefront client with the hardened Express API endpoints.
   - **Planned:** Automated seller payout reconciliation and catalog analytics.
@@ -189,24 +189,14 @@ A curated toolkit chosen for architectural resilience and practical delivery:
 
 Activity metrics and consistency tracking across active engineering projects:
 
-<div align="center">
-  <table border="0">
-    <tr>
-      <td align="center" width="50%">
-        <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=GajjelaVasudev&show_icons=true&theme=radical&bg_color=190B46&title_color=762FF2&text_color=E8E6F0&icon_color=762FF2&border_color=4C2ACB" alt="Vasudev Gajjela GitHub Stats" width="100%" />
-      </td>
-      <td align="center" width="50%">
-        <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=GajjelaVasudev&layout=compact&bg_color=190B46&title_color=762FF2&text_color=E8E6F0&border_color=4C2ACB&langs_count=6" alt="Most Used Languages" width="100%" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center" colspan="2">
-        <br/>
-        <img src="https://streak-stats.demolab.com?user=GajjelaVasudev&theme=midnight-violet&background=190B46&border=762FF2&stroke=762FF2&ring=762FF2&fire=762FF2&currStreakNum=F7F7FB&sideNums=E8E6F0&currStreakLabel=F7F7FB&sideLabels=E8E6F0&dates=D1C4E9" alt="Contribution Streak" width="100%" />
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=GajjelaVasudev&show_icons=true&theme=radical&bg_color=190B46&title_color=762FF2&text_color=E8E6F0&icon_color=762FF2&border_color=4C2ACB" alt="Vasudev Gajjela GitHub Stats" height="180" />
+  &nbsp;
+  <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=GajjelaVasudev&layout=compact&bg_color=190B46&title_color=762FF2&text_color=E8E6F0&border_color=4C2ACB&langs_count=6" alt="Most Used Languages" height="180" />
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=GajjelaVasudev&theme=midnight-violet&background=190B46&border=762FF2&stroke=762FF2&ring=762FF2&fire=762FF2&currStreakNum=F7F7FB&sideNums=E8E6F0&currStreakLabel=F7F7FB&sideLabels=E8E6F0&dates=D1C4E9" alt="Contribution Streak" width="100%" />
+</p>
 
 ---
 

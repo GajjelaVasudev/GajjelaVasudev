@@ -300,6 +300,7 @@ Algorithmic practice and data structure fundamentals across recognized competiti
 ---
 
 ## 📬 Let's Connect
+My GrowthX code is: 6XQHNS
 
 I am always keen to collaborate on challenging backend systems, distributed architectures, quality engineering pipelines, and open-source software:
 
